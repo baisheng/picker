@@ -1,0 +1,65 @@
+version: '3.7'
+services:
+  redis:
+    image: bitnami/redis:latest
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - 6379:6379
+    volumes:
+      - redis-volume:/bitnami/redis/data
+    networks:
+      - db-tier
+  mysql:
+    image: mysql:5.7
+    expose:
+      - 3306
+    ports:
+      - 3307:3306
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES UTF8MB4;' --sql-mode="NO_ENGINE_SUBSTITUTION" --innodb-flush-log-at-trx-commit=0
+    environment:
+      - MYSQL_DATABASE=picker
+      - MYSQL_ROOT_PASSWORD=abcd1234
+      - MYSQL_PASSWORD=abcd1234
+    volumes:
+      #      - ./mysql-dump/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - mysql-volume:/var/lib/mysql
+    networks:
+      - db-tier
+  picker.api:
+    #    image: mhart/alpine-node:12
+    #    working_dir: /app
+#    environment:
+#      - NODE_ENV=production
+#      - NODE_ENV=development
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    networks:
+      - db-tier
+      - traefik
+    command: yarn start:prod
+    #    command: sh docker-entrypoint.sh
+    #    ports:
+    #      - 3001:80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.picker-api.entrypoints=web, web-secure"
+      # 禁止非安全请求
+#      - "traefik.http.routers.picker-api.tls=true"
+      - "traefik.http.routers.picker-api.rule=Host(`api.picker.cc`)"
+      - "traefik.docker.network=traefik"
+volumes:
+  redis-volume:
+  mysql-volume:
+networks:
+  db-tier:
+  traefik:
+    external: true

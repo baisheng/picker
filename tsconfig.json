@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "lib": ["es2018"],
+    "esModuleInterop": true,  // <-- ADD THIS LINE
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+//    "strict": false,
+//    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "target": "es2018",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@app": ["./"],
+      "@app/*": ["./*"]
+    }
+  },
+  "typeAcquisition": {
+    "include": [
+      "jest"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
+  ]
+}

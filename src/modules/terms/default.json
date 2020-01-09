@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "name": "未分类",
+    "slug": "uncategorized",
+    "taxonomy": {
+      "id": 1,
+      "taxonomy": "category",
+      "description": "以图片为主格式的内容"
+    }
+  },
+  {
+    "id": 2,
+    "name": "图片",
+    "slug": "post-format-image",
+    "taxonomy": {
+      "id": 2,
+      "taxonomy": "post-format",
+      "description": "以图片为主格式的内容"
+    }
+  },
+  {
+    "id": 3,
+    "name": "音频",
+    "slug": "post-format-audio",
+    "taxonomy": {
+      "id": 3,
+      "taxonomy": "post-format",
+      "description": "以音频为主格式的内容"
+    }
+  },
+  {
+    "id": 4,
+    "name": "视频",
+    "slug": "post-format-video",
+    "taxonomy": {
+      "id": 4,
+      "taxonomy": "post-format",
+      "description": "以视频为主格式的内容"
+    }
+  },
+  {
+    "id": 5,
+    "name": "官方公示",
+    "group": 1,
+    "taxonomy": {
+      "id": 5,
+      "taxonomy": "announcement",
+      "description": "官方公示公告"
+    }
+  },
+  {
+    "id": 6,
+    "name": "功能优化",
+    "group": 1,
+    "taxonomy": {
+      "id": 6,
+      "taxonomy": "announcement",
+      "description": "功能优化相关的公告"
+    }
+  },
+  {
+    "id": 7,
+    "name": "违规公示",
+    "group": 1,
+    "taxonomy": {
+      "id": 7,
+      "taxonomy": "announcement",
+      "description": "违规公示公告"
+    }
+  },
+  {
+    "id": 8,
+    "name": "财经",
+    "slug": "finance",
+    "group": 2,
+    "taxonomy": {
+      "id": 8,
+      "taxonomy": "category",
+      "description": "财经内容栏目"
+    }
+  },
+  {
+    "id": 9,
+    "name": "汽车",
+    "slug": "car",
+    "group": 2,
+    "taxonomy": {
+      "id": 9,
+      "taxonomy": "category",
+      "description": "汽车内容栏目"
+    }
+  },
+  {
+    "id": 10,
+    "name": "健康",
+    "slug": "health",
+    "group": 2,
+    "taxonomy": {
+      "id": 10,
+      "taxonomy": "category",
+      "description": "健康内容栏目"
+    }
+  },
+  {
+    "id": 11,
+    "group": 2,
+    "name": "教育",
+    "slug": "education",
+    "taxonomy": {
+      "id": 8,
+      "taxonomy": "category",
+      "description": "教育内容栏目"
+    }
+  },
+
+  {
+    "id": 12,
+    "name": "汽车",
+    "taxonomy": {
+      "id": 12,
+      "taxonomy": "post_tag",
+      "description": "汽车标签",
+      "parent": 0
+    }
+  },
+  {
+    "id": 13,
+    "name": "财经",
+    "taxonomy": {
+      "id": 13,
+      "taxonomy": "post_tag",
+      "description": "财经内容标签",
+      "parent": 0
+    }
+  },
+  {
+    "id": 14,
+    "name": "教育",
+    "taxonomy": {
+      "id": 14,
+      "taxonomy": "post_tag",
+      "description": "教育内容标签",
+      "parent": 0
+    }
+  },
+  {
+    "id": 15,
+    "name": "健康",
+    "taxonomy": {
+      "id": 15,
+      "taxonomy": "post_tag",
+      "description": "健康内容标签",
+      "parent": 0
+    }
+  },
+  {
+    "id": 16,
+    "name": "新车",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "新车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 17,
+    "name": "二手车",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "二手车内容标签",
+      "parent": 12
+    }
+  },
+
+  {
+    "id": 18,
+    "name": "用车服务",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "用车服务内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 19,
+    "name": "新能源汽车",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "新能源汽车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 20,
+    "name": "汽车技术",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "汽车技术内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 21,
+    "name": "汽车文化",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "汽车文化内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 22,
+    "name": "买车",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "买车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 23,
+    "name": "卖车",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "卖车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 24,
+    "name": "车源",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "车源内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 25,
+    "name": "置换",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "置换车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 26,
+    "name": "估价",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "估价车内容标签",
+      "parent": 12
+    }
+  },
+  {
+    "id": 27,
+    "name": "残值",
+    "taxonomy": {
+      "taxonomy": "post_tag",
+      "description": "残值车内容标签",
+      "parent": 12
+    }
+  }
+]
