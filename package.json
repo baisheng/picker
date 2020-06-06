@@ -36,7 +36,7 @@
     "@nestjsx/crud-typeorm": "^4.2.0",
     "@sindresorhus/tsconfig": "^0.6.0",
     "@types/passport-jwt": "^3.0.2",
-    "apollo-server-express": "^2.9.7",
+    "apollo-server-express": "^2.14.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "bull": "^3.11.0",
