@@ -80,7 +80,7 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "svg-captcha": "^1.4.0",
     "swagger-ui-express": "^4.1.2",
     "typeorm": "^0.2.20",
